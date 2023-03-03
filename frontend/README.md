@@ -1,0 +1,11 @@
+## Description
+
+# Frontend part
+
+## Running the app
+
+```bash
+# watch mode
+$ npm run start:dev
+```
+
