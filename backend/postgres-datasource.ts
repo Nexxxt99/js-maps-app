@@ -12,10 +12,10 @@ const options: DataSourceOptions = {
     port: parseInt(env.DB_PORT),
     username: env.DB_USER,
     password: env.DB_PASSWORD,
-    database: env.NAME,
+    database: env.DB_NAME,
     namingStrategy: new SnakeNamingStrategy(),
     entities: ['./dist/*/dao/*'],
-    migrations: env.SKIP_MIGRATIONS === '1' ? [] : [ '**/dao/migrations/*.ts'],
+    migrations: env.SKIP_MIGRATIONS === '1' ? [] : ['**/dao/migrations/*.ts'],
 };
 
 export default new DataSource(options);

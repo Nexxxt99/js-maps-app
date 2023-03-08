@@ -6,8 +6,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MapObjectEntity } from './map-objects/dao/map-object.entity';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
-import { ServeStaticModule } from '@nestjs/serve-static';
-import * as Path from 'path';
 
 @Module({
     imports: [
